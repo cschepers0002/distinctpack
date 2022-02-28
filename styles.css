@@ -1,0 +1,190 @@
+@charset "utf-8";
+
+/* --------
+Styles for your mobile webpage
+ -------- */
+ @font-face {
+   font-family: 'San Andreas';
+   src: url('SanAndreas_PERSONAL_USE_ONLY.otf') format('opentype');
+   font-weight: normal;
+ }
+
+body{
+  background: white;
+  font-size: 16px;
+  font-family: 'Rockwell', sans-serif;
+  margin:0;
+  padding:0;
+}
+
+
+h1, h2, h3 {
+  font-family: "Arial";
+  font-weight:normal;
+  text-align: center;
+}
+h1{
+    margin-top:30px;
+    margin-bottom: -8;
+}
+h3{
+    margin-top: 32px;
+    margin-bottom: -8;
+}
+
+p {
+  margin: auto;
+  padding: 5px 2%;
+  line-height: 1.5;
+}
+
+.wrapper {
+ width: 90%;
+ margin: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#logo {
+    /* ------ Max width to keep logo image from being larger than intended ------ */
+    width: 300px;
+    height: auto;
+    margin: 0 auto 0 auto;
+    padding: 20px 0 30px 0;
+    display: block;
+    z-index: 0;
+
+}
+
+
+/* --------
+MOBILE NAV STYLES
+-------- */
+.topnav {
+	overflow: hidden;
+  background-color: #0076ce;
+    /* background-color: rgba(9,118,181,1); */
+  font-family: Arial;
+}
+.topnav a {
+	display: none;
+	color: white;
+	padding: 14px 16px 10px 16px;
+	text-decoration: none;
+	font-size: 1.2em;
+    line-height:1;
+}
+.topnav a:hover {
+    background-color: #014b82;
+    color: white;
+}
+a.active {
+	display: inline-grid;
+	/* background-color:rgba(40,40,40,.6); */
+	color: white;
+}
+.topnav.responsive {
+  position: relative;
+  z-index: 1;
+  background: rgba(9,118,181,1);
+}
+.topnav.responsive a {
+	float: none;
+	display: block;
+	text-align: left;
+    color: white;
+
+	/* border-bottom:1px solid #000; */
+}
+.topnav.responsive a:hover{
+    text-decoration: underline;
+    background-color: transparent;
+
+}
+.topnav a.icon {
+	float: right;
+	display: block;
+}
+.topnav.responsive .icon {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+/* --------
+END MOBILE NAV STYLES
+-------- */
+
+.hero {
+    background-image: url("images/building.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height:300px;
+    min-width: 100px
+}
+
+
+
+
+
+/* --------
+DESKTOP STYLES
+-------- */
+@media only screen and (min-width:700px){
+.topnav {
+	overflow: hidden;
+    background-color: #0076ce;
+    text-align: center;
+    /* border-radius: 25px; */
+  }
+  .topnav a {
+      display: inline-grid;
+      grid-auto-flow: column;
+  }
+  .topnav a.icon {
+      display: none;
+  }
+
+  #logo {
+      /* ------ Max width to keep logo image from being larger than intended ------ */
+      width: 300px;
+      height: auto;
+      margin: auto;
+
+
+  }
+
+  p {
+        padding: 10px;
+
+    }
+
+    h1, h2 {
+      font-size: 30px;
+    }
+
+  section{
+      width:50%;
+      margin: auto;
+  }
+
+  /*About -------------------- */
+  .about-hero{
+      height: 50vh;
+  }
+
+  footer{
+      text-align: center;
+      float: center;
+      background-color: white;
+      padding:5px 0;
+      color: black;
+
+
+  }
+  footer a{
+      color: black;
+      text-decoration: none;
+  }
