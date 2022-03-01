@@ -3,23 +3,28 @@
 /* --------
 Styles for your mobile webpage
  -------- */
- @font-face {
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;700;900&display=swap');
+
+
+ /* @font-face {
    font-family: 'San Andreas';
    src: url('SanAndreas_PERSONAL_USE_ONLY.otf') format('opentype');
    font-weight: normal;
- }
+ } */
 
 body{
   background: white;
   font-size: 16px;
-  font-family: 'Rockwell', sans-serif;
+  font-family: 'Barlow', sans-serif;
   margin:0;
   padding:0;
 }
 
 
 h1, h2, h3 {
-  font-family: "Arial";
+  font-family: 'Barlow', sans-serif;
   font-weight:normal;
   text-align: center;
 }
@@ -47,6 +52,17 @@ p {
   box-sizing: border-box;
 }
 
+.white-text{
+  color:white;
+}
+
+section{
+    width:90%;
+    margin: auto;
+    text-align: center;
+}
+
+
 #logo {
     /* ------ Max width to keep logo image from being larger than intended ------ */
     width: 300px;
@@ -66,7 +82,7 @@ MOBILE NAV STYLES
 	overflow: hidden;
   background-color: #0076ce;
     /* background-color: rgba(9,118,181,1); */
-  font-family: Arial;
+  font-family: 'Barlow', sans-serif;
 }
 .topnav a {
 	display: none;
@@ -126,6 +142,33 @@ END MOBILE NAV STYLES
 }
 
 
+/* INDEX PAGE  ---------------------------------------- */
+.black-hero{
+
+  background-color: black;
+
+  /* Percentage of the viewport height below can change */
+  min-height:300px;
+  /* position: relative; */
+  padding-top: 10px;
+  padding-bottom:10px;
+
+}
+
+.blue-hero{
+
+  background-color: #0076ce;
+
+  /* Percentage of the viewport height below can change */
+  min-height:300px;
+  /* position: relative; */
+  padding-top: 10px;
+  padding-bottom:10px;
+
+}
+
+
+
 
 
 
@@ -165,14 +208,58 @@ DESKTOP STYLES
       font-size: 30px;
     }
 
-  section{
-      width:50%;
+    section{
+      width:70%;
       margin: auto;
-  }
+    }
 
   /*About -------------------- */
   .about-hero{
       height: 50vh;
+  }
+
+  .black-hero {
+    margin-bottom:20px;
+    min-height:150px;
+    padding-bottom: 30px;
+}
+
+.blue-hero {
+  margin-bottom:20px;
+  min-height:150px;
+  padding-bottom: 30px;
+}
+
+/* START ABOUT FLEXBOX STUFF --------------------------------- */
+  figure{
+    /* Flex-basis is like setting a general width of flex items. */
+    flex-basis: 450px;
+    /* padding: 5px; */
+  }
+
+  /* General syles to create a flexbox. Just add the class to any container that has items you want to flex. */
+  .flexbox-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    /* Using the > and then * means a child of the flexbox-container. These are called flex items. Flex items will adjust size in the container, keeping in mind the flex-basis you have given those items. */
+  .flexbox-container > *{
+    /* flex-grow: 1; */
+    flex-shrink: 1;
+  }
+
+  .row {
+    display:flex;
+    padding: 0 4px;
+
+  }
+
+  /* Create two equal columns that sits next to each other */
+  .row .column {
+  flex-basis: 600px;
+  flex-grow: 1;
+  flex-shrink: 1;
   }
 
   footer{
