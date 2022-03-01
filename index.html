@@ -33,6 +33,7 @@
 	 <a href="#what-we-do">What We Do</a>
 	 <a href="#history">History</a>
 	 <a href="#certifications">Certifications &amp; Awards</a>
+   <a href="#contact">Contact</a>
 	<!-- Dont change the link below -->
 	   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
 		 <i class="fa fa-bars"></i>
@@ -52,6 +53,8 @@
 
   </section>
 </div>
+
+
 
 <!-- Flexbox info:
  https://www.w3schools.com/css/css3_flexbox.asp
@@ -116,6 +119,7 @@
   </section>
 </div>
 
+<div class="hero1"></div>
 <!-- IMAGE WILL GO HERE -------------------------------------- -->
 <div id="certifications">
   <h1>Certifications &amp; Awards</h1>
@@ -129,3 +133,97 @@
       <img src="images/GMI-logo.jpg" style="width:50%;">
       </figure>
       </div>
+
+<div class="black-hero" id="contact">
+  <section class="white-text">
+      <h1>Contact Us</h1>
+      <p class="white-text">To learn more about Distinct Packabilities, fill out the form below. A company respresentative will reach out to you soon.</p>
+    <form action="thanks.html">
+      <label>Your Name: <br>
+  			 <input type="text" id="name" name="name" required>
+      </label>
+
+  		<label>Email: <br>
+  			 <input type="email" id="email" name="email" required>
+      </label>
+
+      <label>Message: <br>
+  			 <textarea id="message" required></textarea>
+       </label>
+
+  			 <!-- <p>Please indicate what subject your message involves:</p>
+  		 <ul>
+  			 <li><input class="checkbox" type="checkbox" name="member" id="member" value="member" class="svc">Booking an Appointment</li>
+  			 <li><input class="checkbox" type="checkbox" name="donate" id="donate" value="donate" class="svc">General Questions</li>
+  			 <li><input class="checkbox" type="checkbox" name="general" id="general" value="general" class="svc">Requesting a Meeting</li>
+  			 <li><input class="checkbox" type="checkbox" name="other" id="other" value="other" class="svc">Other</li>
+  			 <li><input class="checkbox" type="checkbox" class="cursor" id="news" name="news" checked> Client Monthly Email List</label></li>
+  		 </ul> -->
+
+  			 <!-- <label id="newsletter"> <input type="checkbox" class="cursor" id="news" name="news" checked> Receive our newsletters</label> -->
+
+  			 <button type="submit" class="cursor" value="Submit">Submit</button>
+
+  	 </form>
+
+  </section>
+</div>
+
+<footer>
+
+	 	<!-- <div class="footer-text1">
+    <p><b>Email</b><br>sales@distinctpack.com</p>
+    <p><b>Phone</b><br>(502) 264-9685</p>
+    </div>
+
+    <img class="footer-logo" src="images/logo.png">
+
+
+	  <div class="footer-text2">
+	 	<p>Charlotte Schepers Web Design</p><p>&copy; 2022 Distinct Packabilties | <a href="#">Back to Top</a></p>
+	 	</div>
+
+ 	</footer> -->
+  <div class="footer-row">
+      <div class="footer-column" >
+        <div class="footer-text1">
+        <p><b>Email</b><br>sales@distinctpack.com</p>
+        <p><b>Phone</b><br>(502) 264-9685</p>
+      </div>
+      </div>
+
+     <div class="footer-column" >
+       <img class="footer-logo" src="images/logo.png">
+     </div>
+
+     <div class="footer-column" >
+      <div class="footer-text2">
+        <br>
+          <p>Charlotte Schepers Web Design</p><p>&copy; 2022 Distinct Packabilties | <a href="#">Back to Top</a></p>
+      </div>
+      </div>
+
+  </div><!--end footer row-->
+
+
+
+</footer>
+
+
+
+
+<!--  Don't Touch Javascript below
+		This needs to be on every HTML document  -->
+		<script>
+			function myFunction() {
+				 var x = document.getElementById("myTopnav");
+				if (x.className === "topnav") {
+				 x.className += " responsive";
+				 } else {
+					 x.className = "topnav";
+				 }
+			 }
+		</script>
+
+</body>
+</html>
