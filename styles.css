@@ -132,13 +132,16 @@ a.active {
 END MOBILE NAV STYLES
 -------- */
 
+
+/* HEROES ---------------------------------------------- */
 .hero {
     background-image: url("images/building.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     min-height:300px;
-    min-width: 100px
+    min-width: 100px;
+    position: relative;
 }
 
 .hero1 {
@@ -148,6 +151,18 @@ END MOBILE NAV STYLES
     background-size: cover;
     min-height:300px;
     min-width: 100px
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Barlow";
+  text-shadow: 5px 5px 10px black;
+
 }
 
 /* INDEX PAGE  ---------------------------------------- */
@@ -174,6 +189,9 @@ END MOBILE NAV STYLES
   padding-bottom:10px;
 
 }
+
+
+/* CONTACT FORM -------------------------------- */
 
 form{
   margin: 20px auto;
@@ -246,6 +264,25 @@ button:checked, button:hover,  button:active, button:focus{
      background-color :#0076ce;
      color: white;
 }
+
+.service-grid {
+  /* padding: 0 0 10px 10px; */
+  width: 90%;
+  margin: auto;
+}
+.service-grid p{
+    text-align: left;
+}
+.blue-shadow {
+  box-shadow: -20px 20px 0px rgba(0,118,206,1);
+  /* max-width: 20%; */
+}
+.black-shadow {
+  box-shadow: -20px 20px 0px rgba(0,0,0,1);
+  /* max-width: 20%; */
+}
+
+
 
 footer {
   text-align: center;
@@ -326,36 +363,36 @@ DESKTOP STYLES
 }
 
 /* START ABOUT FLEXBOX STUFF --------------------------------- */
-  figure{
+  /* figure{ */
     /* Flex-basis is like setting a general width of flex items. */
-    flex-basis: 450px;
+    /* flex-basis: 450px; */
     /* padding: 5px; */
-  }
+  /* } */
 
   /* General syles to create a flexbox. Just add the class to any container that has items you want to flex. */
-  .flexbox-container{
+  /* .flexbox-container{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-    }
+    } */
     /* Using the > and then * means a child of the flexbox-container. These are called flex items. Flex items will adjust size in the container, keeping in mind the flex-basis you have given those items. */
-  .flexbox-container > *{
+  /* .flexbox-container > *{ */
     /* flex-grow: 1; */
-    flex-shrink: 1;
+    /* flex-shrink: 1;
   }
 
   .row {
     display:flex;
     padding: 0 4px;
 
-  }
+  } */
 
   /* Create two equal columns that sits next to each other */
-  .row .column {
+  /* .row .column {
   flex-basis: 600px;
   flex-grow: 1;
   flex-shrink: 1;
-  }
+  } */
 
   button{
       margin-top: 2%;
@@ -363,6 +400,26 @@ DESKTOP STYLES
       margin-bottom: 5%;
   }
 
+
+/* SERVICE GRID ------------------------------------- */
+
+  .services-hero{
+        height: 50vh;
+        background-position: top;
+        width: 10vh;
+    }
+
+    .service-grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    figure{
+        width:20%;
+
+    }
+
+/* FOOTER ------------------------------------------ */
   footer{
     text-align: center;
     background-color: white;
