@@ -27,14 +27,20 @@ h1, h2, h3 {
   font-family: 'Barlow', sans-serif;
   font-weight:normal;
   text-align: center;
+
 }
+
+
 h1{
     margin-top:30px;
-    margin-bottom: -8;
+    margin-bottom: -8px;
+    width: 100%;
+    display: block;
+
 }
 h3{
     margin-top: 32px;
-    margin-bottom: -8;
+    margin-bottom: -8px;
 }
 
 p {
@@ -150,7 +156,7 @@ END MOBILE NAV STYLES
     background-position: center;
     background-size: cover;
     min-height:300px;
-    min-width: 100px
+    min-width: 100px;
 }
 
 .hero-text {
@@ -176,6 +182,7 @@ END MOBILE NAV STYLES
   padding-top: 10px;
   padding-bottom:10px;
 
+
 }
 
 .blue-hero{
@@ -190,6 +197,10 @@ END MOBILE NAV STYLES
 
 }
 
+/* #certifications {
+width: 100%;
+display: block;
+} */
 
 /* CONTACT FORM -------------------------------- */
 
@@ -348,6 +359,7 @@ DESKTOP STYLES
 
   .hero1{
       height: 70vh;
+      width: 100%;
   }
 
   .black-hero {
@@ -363,36 +375,36 @@ DESKTOP STYLES
 }
 
 /* START ABOUT FLEXBOX STUFF --------------------------------- */
-  /* figure{ */
+  #certifications figure{
     /* Flex-basis is like setting a general width of flex items. */
-    /* flex-basis: 450px; */
-    /* padding: 5px; */
-  /* } */
+    flex-basis: 450px;
+    padding: 5px;
+  }
 
   /* General syles to create a flexbox. Just add the class to any container that has items you want to flex. */
-  /* .flexbox-container{
+  .flexbox-container{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-    } */
+    }
     /* Using the > and then * means a child of the flexbox-container. These are called flex items. Flex items will adjust size in the container, keeping in mind the flex-basis you have given those items. */
-  /* .flexbox-container > *{ */
-    /* flex-grow: 1; */
-    /* flex-shrink: 1;
+  .flexbox-container > *{
+    flex-grow: 1;
+    flex-shrink: 1;
   }
 
   .row {
     display:flex;
     padding: 0 4px;
 
-  } */
+  }
 
   /* Create two equal columns that sits next to each other */
-  /* .row .column {
+  .row .column {
   flex-basis: 600px;
   flex-grow: 1;
   flex-shrink: 1;
-  } */
+  }
 
   button{
       margin-top: 2%;
@@ -414,8 +426,8 @@ DESKTOP STYLES
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    figure{
-        width:20%;
+    .service-grid figure{
+        width:18%;
 
     }
 
