@@ -33,10 +33,14 @@ h1, h2, h3 {
 
 h1{
     margin-top:30px;
-    margin-bottom: -8px;
+
     width: 100%;
     display: block;
 
+}
+
+h2 {
+  margin-top: 32px;
 }
 h3{
     margin-top: 32px;
@@ -265,7 +269,7 @@ button {
   border-radius: 4px;
   /* box-shadow: 0 0 5px 0 rgba(0,0,0,0.19); */
   width: 250px;
-  margin: 50px 70px 50px 85px;
+  margin: 50px 70px 50px 40px;
   cursor: pointer;
 
 }
@@ -278,11 +282,17 @@ button:checked, button:hover,  button:active, button:focus{
 
 .service-grid {
   /* padding: 0 0 10px 10px; */
-  width: 90%;
   margin: auto;
+}
+
+.service-grid figure {
+    width: 58%;
+    margin: auto;
+    display: block;
 }
 .service-grid p{
     text-align: left;
+    padding: 5px 10px 25px 2%;
 }
 .blue-shadow {
   box-shadow: -20px 20px 0px rgba(0,118,206,1);
@@ -410,6 +420,7 @@ DESKTOP STYLES
       margin-top: 2%;
       margin-left:1%;
       margin-bottom: 5%;
+      margin: 50px 70px 50px 270px;
   }
 
 
@@ -427,7 +438,8 @@ DESKTOP STYLES
         justify-content: space-between;
     }
     .service-grid figure{
-        width:18%;
+        width:16%;
+        margin: auto;
 
     }
 
