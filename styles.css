@@ -163,6 +163,14 @@ END MOBILE NAV STYLES
     min-width: 100px;
 }
 
+.hero2 {
+    background-image: url("images/hero2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height:300px;
+    min-width: 100px;
+}
 .hero-text {
   text-align: center;
   position: absolute;
@@ -371,6 +379,12 @@ DESKTOP STYLES
       height: 70vh;
       width: 100%;
   }
+
+  .hero2{
+      height: 70vh;
+      width: 100%;
+  }
+
 
   .black-hero {
     margin-bottom:20px;
