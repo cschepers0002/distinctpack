@@ -163,6 +163,14 @@ END MOBILE NAV STYLES
     min-width: 100px;
 }
 
+.desktop-awards {
+  width: 100%;
+  display: block;
+  margin: auto;
+  padding: 0px 35px 35px 35px;
+}
+
+
 .hero2 {
     background-image: url("images/hero2.jpg");
     background-repeat: no-repeat;
@@ -380,10 +388,10 @@ DESKTOP STYLES
       width: 100%;
   }
 
-  .hero2{
+  /* .hero2{
       height: 70vh;
       width: 100%;
-  }
+  } */
 
 
   .black-hero {
@@ -396,6 +404,17 @@ DESKTOP STYLES
   min-height:150px;
   padding-bottom: 30px;
 }
+
+.desktop-awards {
+  max-width: 80%;
+  height: 50vh;
+  display: block;
+  margin: auto;
+  padding: 0px 35px 35px 35px;
+
+}
+
+
 
 /* START ABOUT FLEXBOX STUFF --------------------------------- */
   #certifications figure{
