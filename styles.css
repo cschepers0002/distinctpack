@@ -75,7 +75,7 @@ section{
 
 #logo {
     /* ------ Max width to keep logo image from being larger than intended ------ */
-    width: 300px;
+    width: 100%;
     height: auto;
     margin: 0 auto 0 auto;
     padding: 20px 0 30px 0;
@@ -90,7 +90,7 @@ MOBILE NAV STYLES
 -------- */
 .topnav {
 	overflow: hidden;
-  background-color: #0076ce;
+  background-color: #444444;
     /* background-color: rgba(9,118,181,1); */
   font-family: 'Barlow', sans-serif;
 }
@@ -103,7 +103,7 @@ MOBILE NAV STYLES
     line-height:1;
 }
 .topnav a:hover {
-    background-color: #014b82;
+    background-color: black;
     color: white;
 }
 a.active {
@@ -145,13 +145,15 @@ END MOBILE NAV STYLES
 
 /* HEROES ---------------------------------------------- */
 .hero {
-    background-image: url("images/building.jpg");
+    background-image: url("images/hero2.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     min-height:300px;
     min-width: 100px;
     position: relative;
+      margin-top: 18px;
+
 }
 
 .hero1 {
@@ -163,6 +165,58 @@ END MOBILE NAV STYLES
     min-width: 100px;
 }
 
+.black-box {
+  background-color: black;
+  min-height:75px;
+  margin-top: 20px;
+  padding-bottom:10px;
+
+}
+
+.what-we-do {
+  background-color: black;
+  max-height:50px;
+  margin-top: 10px;
+  margin-bottom:20px;
+  padding-bottom:10px;
+
+}
+
+#what-we-do {
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+
+  /* padding-top: 5px;
+  padding-bottom: 5px;
+  margin: auto; */
+}
+
+#white-text {
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#white-text1 {
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#heading {
+  color: white;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.hat {
+  width: 100px;
+  float: center;
+  position: inline;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 .desktop-awards {
   width: 100%;
   display: block;
@@ -210,10 +264,11 @@ END MOBILE NAV STYLES
   background-color: #0076ce;
 
   /* Percentage of the viewport height below can change */
-  min-height:300px;
+  min-height:400px;
   /* position: relative; */
   padding-top: 10px;
   padding-bottom:10px;
+  margin-top: 20px;
 
 }
 
@@ -343,7 +398,7 @@ DESKTOP STYLES
 @media only screen and (min-width:700px){
 .topnav {
 	overflow: hidden;
-    background-color: #0076ce;
+    background-color: #444444;
     text-align: center;
     /* border-radius: 25px; */
   }
@@ -357,12 +412,22 @@ DESKTOP STYLES
 
   #logo {
       /* ------ Max width to keep logo image from being larger than intended ------ */
-      width: 300px;
+      width: 100%;
       height: auto;
       margin: auto;
+      padding-bottom: 0px;
 
 
   }
+
+  /* .logo-blue {
+    background-image: url("images/logoblue.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height:400px;
+  min-width: 100px
+  } */
 
   p {
         padding: 10px;
@@ -381,7 +446,67 @@ DESKTOP STYLES
 
   .hero{
       height: 50vh;
+        margin-top: 18px;
   }
+
+  .black-box {
+    background-color: black;
+    min-height:75px;
+    margin-top: 20px;
+    padding-bottom:10px;
+    max-width: 30%;
+  }
+
+  #white-text {
+    color: white;
+    font-size: 1.2em;
+    text-align: left;
+
+  }
+
+  #white-text1 {
+    color: white;
+    font-size: 1.2em;
+    text-align: right;
+    padding-right: 100px;
+    padding-left: 550px;
+    margin-top: 20px;
+
+
+  }
+
+  #heading {
+    position: inline;
+    text-align: left;
+    padding-left: 20px;
+    color: white;
+    font-size: 2em;
+  }
+
+  .hat {
+    position: inline;
+    float: left;
+    padding-left: 20px;
+    margin-top: 30px;
+    width: 250px
+  }
+
+
+  .what-we-do {
+    background-color: black;
+    min-height:65px;
+    margin-top: 20px;
+    padding-bottom:10px;
+
+  }
+
+  #what-we-do {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 5px;
+  }
+
 
   .hero1{
       height: 70vh;
@@ -401,8 +526,9 @@ DESKTOP STYLES
 
 .blue-hero {
   margin-bottom:20px;
-  min-height:150px;
+  min-height:300px;
   padding-bottom: 30px;
+  margin-top: 20px;
 }
 
 .desktop-awards {
