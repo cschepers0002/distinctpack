@@ -637,7 +637,7 @@ padding-top: 10px;
     }
     .service-grid figure{
         width:17%;
-
+        max-width: 250px;
         height: 540px;
 
     }
