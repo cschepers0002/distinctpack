@@ -516,7 +516,7 @@ DESKTOP STYLES
 
   #heading {
     position: inline;
-    text-align: left;
+    text-align: center;
 
     color: white;
     font-size: 2em;
@@ -573,7 +573,6 @@ padding-top: 10px;
 
 .desktop-awards {
   width: 600px;
-  height: 33vh;
   display: block;
   margin: auto;
   padding: 0px 35px 35px 35px;
@@ -638,7 +637,7 @@ padding-top: 10px;
     }
     .service-grid figure{
         width:17%;
-        
+
         height: 540px;
 
     }
