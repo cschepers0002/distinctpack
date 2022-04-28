@@ -453,7 +453,7 @@ DESKTOP STYLES
 
   #logo {
       /* ------ Max width to keep logo image from being larger than intended ------ */
-      width: 80%;
+      width: 100%;
       height: auto;
       margin: auto;
       padding-bottom: 0px;
