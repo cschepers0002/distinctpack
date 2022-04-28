@@ -234,6 +234,7 @@ END MOBILE NAV STYLES
     background-size: cover;
     min-height:400px;
     min-width: 100px;
+
 }
 .hero-text {
   text-align: center;
@@ -247,6 +248,12 @@ END MOBILE NAV STYLES
 
 }
 
+
+.slogan {
+  background-color: #0076ce;
+  min-height: 10vh;
+  padding: 10px;
+}
 .slogan h1 {
   text-align: center;
   position: absolute;
@@ -254,8 +261,20 @@ END MOBILE NAV STYLES
   font-family: "Barlow";
   text-shadow: 5px 5px 10px black;
   margin: auto;
-  font-size: 5em;
-  margin-top: 50px;
+  font-size: 29px;
+  margin-top: 7px;
+  padding-right: 10px;
+  padding-left: 5px;
+}
+
+.slogan h2 {
+  text-align: right;
+  color: white;
+  font-family: "Barlow";
+  margin: auto;
+  font-size: 1em;
+  padding-top: 30px;
+  padding-right: 80px;
 }
 
 /* INDEX PAGE  ---------------------------------------- */
@@ -301,6 +320,7 @@ form p{
 }
 label{
   display:block;
+  text-align: left;
 }
 
 input{
@@ -388,10 +408,15 @@ button:checked, button:hover,  button:active, button:focus{
 }
 
 
+.products img{
+  width: 400px;
+  margin: auto;
+}
+
 
 footer {
   text-align: center;
-  padding-top: 25px;
+
 }
 
 .footer-logo {
@@ -427,7 +452,7 @@ DESKTOP STYLES
 
   #logo {
       /* ------ Max width to keep logo image from being larger than intended ------ */
-      width: 100%;
+      width: 80%;
       height: auto;
       margin: auto;
       padding-bottom: 0px;
@@ -553,8 +578,8 @@ padding-top: 10px;
 }
 
 .desktop-awards {
-  max-width: 80%;
-  height: 50vh;
+  max-width: 50%;
+  height: 40vh;
   display: block;
   margin: auto;
   padding: 0px 35px 35px 35px;
@@ -599,7 +624,7 @@ padding-top: 10px;
       margin-top: 2%;
       margin-left:1%;
       margin-bottom: 5%;
-      margin: 50px 70px 50px 574px;
+      margin: 50px 70px 50px 275px;
   }
 
 
@@ -621,6 +646,46 @@ padding-top: 10px;
         width:11%;
         margin: auto;
         height: 540px;
+
+    }
+
+    form{
+      margin: 20px auto;
+      width:50%;
+    }
+
+
+    .products img{
+      width: 800px;
+      z-index: 0;
+    }
+
+    .slogan {
+      background-color: #0076ce;
+      min-height: 15vh;
+      padding: 10px;
+      z-index: -1;
+    }
+    .slogan h1 {
+      text-align: right;
+      position: absolute;
+      color: white;
+      font-family: "Barlow";
+      text-shadow: 5px 5px 10px black;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 7px;
+      padding-right: 20px;
+
+    }
+
+    .slogan h2 {
+      text-align: right;
+      color: white;
+      font-family: "Barlow";
+      margin: auto;
+      font-size: 2em;
+      padding-top: 60px;
 
     }
 
@@ -649,8 +714,8 @@ padding-top: 10px;
   }
 
   .footer-logo {
-    width: 70%;
-    float: center;
+    width: 57%;
+    padding-top: 0;
     margin: auto;
   }
 
