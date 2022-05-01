@@ -22,6 +22,16 @@ body{
   padding:0;
 }
 
+.red-banner {
+  background-color: red;
+
+}
+.red-banner a {
+  color: white;
+  text-align: center;
+
+}
+
 
 h1, h2, h3 {
   font-family: 'Barlow', sans-serif;
