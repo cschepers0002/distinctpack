@@ -214,6 +214,7 @@ END MOBILE NAV STYLES
   color: white;
   font-size: 1.2em;
   text-align: center;
+
 }
 
 #heading {
@@ -223,8 +224,7 @@ END MOBILE NAV STYLES
 }
 .hat {
   width: 100px;
-  float: center;
-  position: inline;
+
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -421,6 +421,7 @@ button:checked, button:hover,  button:active, button:focus{
 .products img{
   width: 400px;
   margin: auto;
+  display: block;
 }
 
 
@@ -462,7 +463,7 @@ DESKTOP STYLES
 
   #logo {
       /* ------ Max width to keep logo image from being larger than intended ------ */
-      width: 80%;
+      width: 100%;
       height: auto;
       margin: auto;
       padding-bottom: 0px;
@@ -517,28 +518,21 @@ DESKTOP STYLES
   #white-text1 {
     color: white;
     font-size: 1.2em;
-    text-align: right;
-    padding-right: 100px;
-    padding-left: 550px;
-    margin-top: 20px;
-
+    text-align: center;
+    padding-top: 20px;
+    width: 60%;
 
   }
 
   #heading {
     position: inline;
-    text-align: left;
-    padding-left: 20px;
+    text-align: center;
+
     color: white;
     font-size: 2em;
   }
 
   .hat {
-    position: inline;
-    float: left;
-    padding-left: 20px;
-    margin-top: 30px;
-    width: 250px
   }
 
 
@@ -588,8 +582,7 @@ padding-top: 10px;
 }
 
 .desktop-awards {
-  max-width: 50%;
-  height: 33vh;
+  width: 600px;
   display: block;
   margin: auto;
   padding: 0px 35px 35px 35px;
@@ -653,8 +646,8 @@ padding-top: 10px;
         padding-top: 32px;
     }
     .service-grid figure{
-        width:11%;
-        margin: auto;
+        width:17%;
+        max-width: 250px;
         height: 540px;
 
     }
@@ -677,7 +670,7 @@ padding-top: 10px;
       z-index: -1;
     }
     .slogan h1 {
-      text-align: right;
+      text-align: center;
       position: absolute;
       color: white;
       font-family: "Barlow";
@@ -690,7 +683,7 @@ padding-top: 10px;
     }
 
     .slogan h2 {
-      text-align: right;
+      text-align: center;
       color: white;
       font-family: "Barlow";
       margin: auto;
